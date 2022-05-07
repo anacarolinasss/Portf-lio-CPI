@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Raleway:wght@100&family=Roboto:wght@100;300;400&display=swap");
+
+*{
+	margin: 0; padding: 0;
+}
+
+head{}
+
+body{
+	background-image: url(img/fundo.png);
+	background-attachment: fixed;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+section{}
+
+/*BANNER DO SITE*/
+
+header, img{
+	height: 250px;
+	width: 100%;
+}
+
+/*MENU DE NAVEGAÇÃO*/
+
+nav{
+	width: 99%;
+	height: 20px;
+	background-color: #563F4E;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+a{	
+	font-family: Comfortaa, sans-serif;
+	font-size: 1.2rem ;
+	text-decoration: none;	
+	text-align: center;	
+}
+
+.a-menu{
+	padding: 33px;
+	margin-right: 75px;
+	margin-left: 75px;
+}
+
+.a-menu:link, .a-menu:visited{
+	color: #FFFFFF;
+
+}
+
+.a-menu:hover, .a-menu:active{
+	color: #E2B0C2;
+}
+
+/*CONTEÚDO - SOBRE A EMPRESA*/
+
+article{
+	width: 100%;
+	background-color: #FBF8F8;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+h1{
+	font-family: Raleway, sans-serif; 
+	font-size: 2rem;
+	text-align: center;
+	color: #442534;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+article p{
+	font-family: Roboto, sans-serif; 
+	font-size: 1.2rem;
+	color: #1B1B1B;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+/*CONTEÚDO - EVENTOS*/
+
+main{
+	width: 100%;
+	height: 330px;
+}
+
+#box-main{
+	width: 90%;
+	height: 200px;
+	background-color: #C1B0B6;
+	padding: 20px;
+	position: relative;
+	margin-left: 45px;
+	margin-top: 65px;
+	border-radius: 9px 9px 9px 9px;
+}
+
+h2{
+	font-family: Comfortaa, sans-serif;
+	font-size: 1.7rem;
+	text-align: justify;
+	color: #51193A;
+	margin-bottom: 20px ;
+}
+
+p{
+	font-family: Roboto, sans-serif; 
+	font-size: 1.2rem;
+	color: #1B1B1B;
+	text-align: justify;
+	margin-bottom: 7px;
+}
+
+#box-evento{
+	font-family: Roboto, sans-serif; 
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	text-align: justify;
+}
+
+/*LINK INSTAGRAM*/
+
+#container-contato{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	align-items: center;
+}
+
+#container-contato p{
+	color: #504B4D;
+	font-size: 1.1rem;
+}
+
+.img-icone{
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+}
+
+/*MIDIAS*/
+
+#pag-midias{
+
+}
+
+.card{
+	background-color: #fff;
+	margin: 10px;
+	width: 25%;
+	border-radius: 5px;
+	box-shadow: 7px 7px 17px #66485C;
+	transition: 2s;
+}
+
+.card-content{
+	padding: 10px;
+}
+
+h3{
+	font-family: Comfortaa, sans-serif;
+	color: #250A1A;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#container{
+	display: flex;
+	margin-top:10px ;
+}
+
+/*PÁG AGENDAMENTO e JAVASCRIPT*/
+
+#main-agendamentos{
+ 	width: 90%;
+ 	height: 200px;
+ 	margin-top: 30px;
+ 	margin-left: 67px;
+ 	margin-right: 20px;
+ 	background-color: #C1B0B6 ;
+ 	position: relative;
+ }
+
+label{
+	font-family: Roboto, sans-serif; 
+	font-size: 1.2rem;
+	color: #1B1B1B;
+}
+
+#pag-agendamentos p{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 600px;
+	margin: 0 auto;
+}
+
+input, select, textarea{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	border: 1px solid #C4C4C4;
+}
+
+#tel-data-conv{
+	display: flex;
+}
+
+textarea{
+	height: 80px;
+}
+
+#bts-form{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 20px;
+	background-color: #78B7DB;
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 5px;
+}
+
+input[type="reset"]{
+	background-color: #BC2E2E;
+}
+
+/*RODAPÉ*/
+
+footer{
+	background-color: #000000;
+	padding: 15px;
+	clear: both;
+}
+
+footer p{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1.1rem;
+	font-family: Roboto;
+}
+
+footer a{
+	color: #FFFFFF;
+	font-size: 1.1rem;
+	font-family: Roboto, sans-serif;
+}
+
+footer a:hover{
+	color: #CFA8BB;
+}

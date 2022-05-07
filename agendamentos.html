@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ana Carolina Itacarambi Araújo e Sérgio da Silva Pereira" />
+	<meta name="keywords" content="Cerimonial, eventos, organização de eventos, assessoria de eventos, casamento" />
+	<meta name="description" content="Organização e assessoria de eventos" />
+	<title>Renata Gonzaga Cerimonial</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+	<section>
+		<header>
+			<img src="img/banner.png" alt="banner com o logotipo da empresa Renata Gonzaga Cerimonial"> 
+		</header>
+
+		<nav>
+			<a class="a-menu" href="index.html"> SOBRE </a>
+			<a class="a-menu" href="index.html#pag-sobre"> EVENTOS </a>
+			<a class="a-menu" href="index.html#pag-midias"> MÍDIAS </a>
+			<a class="a-menu" href="#">AGENDAMENTOS</a>
+		</nav>
+
+		<main id="main-agendamentos">
+			<section id="box-agendamento">
+			<label for="A">Selecione o evento desejado para visualizar preços:</label>
+				<select id="Preço"> 
+					<option value="">Selecione uma opção:</option>
+					<option value="casamento">Casamento (PACOTE COMPLETO RENATA GONZAGA)</option>
+					<option value="aniversario">Festa de aniversário (PACOTE COMPLETO RENATA GONZAGA)</option>
+					<option value="eventos">Eventos sociais - Formatura, Festas corporativas... (PACOTE COMPLETO RENATA GONZAGA)</option>
+				</select>	
+				<p></p>		
+			</section>
+		</main>
+	<script type="text/javascript">
+		var select = document.querySelector('select');
+		var para = document.querySelector('p');
+
+		select.addEventListener('change', setPreço);
+
+		function setPreço() {
+			var choice = select.value;
+
+			if (choice === 'casamento') {
+				para.textContent = 'Casamentos com menos de 200 convidados = R$ 3.000 reais, e mais de 200 convidados = R$ 4.000 reais. Bufê da casa = R$ 3.000 reais. Aluguel do Cerrado Palace = R$ 5.000. Cerimonial e assessoria de Renata Gonzaga com tudo da casa incluso = R$ 10.000 reais (único que recebe desconto).'; 
+			} else if (choice === 'aniversario') {
+				para.textContent = 'Festas de aniversários e debutantes a partir de R$ 20,00 reais por convidado (100 pessoas = R$ 2.000). Aluguel do Cerrado Palace = R$ 5.000. Bufê = R$ 2.500 reais.';
+			} else if (choice === 'eventos') {
+				para.textContent = 'A assessoria de eventos sociais em geral, como festas de formatura, festas corporativas e entre outras precisam ter um orçamento feito por fora diretamente com o cliente. Antes de preencher o formulário de agendamento entre em contato conosco pelo telefone (61) 90000-0000. OBS: Aluguel do Cerrado Palace = R$ 5.000.';
+			}	else {
+				para.textContent = "";
+			}
+		}
+	</script>
+
+	<section id="pag-agendamentos">
+		<h1>Agendamento</h1>
+			<p>Agende seu evento conosco!</p>
+
+		<form name="" method=" action">
+			<label for="nome">Nome:</label>
+			<input id="nome" type="text" name="nome" placeholder="Digite seu nome completo" />
+
+			<label for="email">E-mail:</label>
+			<input id="email" type="email" name="email" placeholder="nome@email.com" />
+
+			<div id="tel-data-conv">
+				<div>
+					<label for="telefone">Telefone:</label>
+					<input id="telefone" type="tel" name="telefone" placeholder="(99) 99999-9999"  />
+				</div>
+				<div>
+					<label for="data">Data:</label>
+					<input id="data" type="date" name="data" />
+				</div>
+				<div>
+					<label for="data">Convidados:</label>
+					<input id="convidados" type="number" name="aulas" min="1" max="400" step="1" />
+				</div>
+			</div>
+
+			<label for="evento">Tipo de evento:</label>
+			<select id="evento" name="evento">
+				<option value="">Selecione:</option>
+				<option value="casamento">Casamento</option>
+				<option value="aniversário">Festa de aniversário/debutante</option>
+				<option value="eventos-sociais">Evento social</option>
+			</select>
+
+			<label for="local">Local:</label>
+			<select id="local" name="local">
+				<option value="">Selecione:</option>
+				<option value="cerrado palace">Cerrado Palace</option>
+				<option value="outro">Outro</option>
+			</select>
+
+				<label for="bufe">Bufê:</label>
+			<select id="bufe" name="bufe">
+				<option value="">Selecione:</option>
+				<option value="bufe-casa">Bufê da casa</option>
+				<option value="bufe-fora">Bufê por fora</option>
+			</select>
+
+			<label for="msg">Comentários e observações:</label>
+			<textarea id="msg" cols="79" rows="6"></textarea>
+				
+		<div id="bts-form">
+			<input type="submit" name="btn-agendar" value="AGENDAR" />
+			<input type="reset" name="btn-cancelar" value="CANCELAR" />
+		</div>
+		</form>
+	</section>
+
+		<div id="container-contato">
+			<a href="https://www.instagram.com/assessorarenatagonzaga" target="_blank">
+				<img class="img-icone" src="img/instagram.png" />
+			</a>
+				<p>@assessorarenatagonzaga</p>
+		</div>
+		
+	<footer>
+		<p>Desenvolvido por <a href="http://instagram.com/acarolitac" target="_blank">Ana Carolina Itacarambi Araújo</a>, <a href="https://instagram.com/sergio_sd2/" target="blank">Sérgio da Silva Pereira</a> e Gabriel Magalhães Silva - 2022</p>
+	</footer>
+
+	</section>
+</body>
+</html>
